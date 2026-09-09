@@ -1,0 +1,27 @@
+﻿<!--
+  FileWheel.Cli: the "filewheel" command line. Converts files and watches folders without the tray app, with the same
+  engines, presets and settings. Published next to FileWheel.exe as filewheel-cli.exe (one runtime for both); the installer
+  puts a "filewheel" shim on PATH (cli\filewheel.cmd).
+-->
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>filewheel-cli</AssemblyName>
+    <RootNamespace>FileWheel.Cli</RootNamespace>
+    <ApplicationIcon>..\FileWheel.App\Assets\Icons\filewheel.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FileWheel.Core\FileWheel.Core.csproj" />
+    <ProjectReference Include="..\FileWheel.Engines\FileWheel.Engines.csproj" />
+  </ItemGroup>
+
+  <!-- Error messages and built-in preset names, in English (the app's translation file). -->
+  <ItemGroup>
+    <EmbeddedResource Include="..\FileWheel.App\Assets\i18n\en.json" LogicalName="FileWheel.Cli.en.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="FileWheel.Cli.Tests" />
+  </ItemGroup>
+</Project>
