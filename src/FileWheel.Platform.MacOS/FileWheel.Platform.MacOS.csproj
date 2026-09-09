@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>FileWheel.Platform.MacOS</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FileWheel.Core\FileWheel.Core.csproj" />
+    <InternalsVisibleTo Include="FileWheel.Platform.Tests" />
+  </ItemGroup>
+</Project>
