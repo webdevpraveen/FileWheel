@@ -1,0 +1,40 @@
+﻿// Version information of the Explorer context-menu DLL. build/build-explorer-menu.ps1 passes the app version as
+// FILEWHEEL_VERSION_MAJOR/MINOR/PATCH and FILEWHEEL_VERSION_TEXT.
+
+#include <winver.h>
+
+#ifndef FILEWHEEL_VERSION_MAJOR
+#define FILEWHEEL_VERSION_MAJOR 0
+#define FILEWHEEL_VERSION_MINOR 0
+#define FILEWHEEL_VERSION_PATCH 0
+#define FILEWHEEL_VERSION_TEXT "0.0.0"
+#endif
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION FILEWHEEL_VERSION_MAJOR, FILEWHEEL_VERSION_MINOR, FILEWHEEL_VERSION_PATCH, 0
+PRODUCTVERSION FILEWHEEL_VERSION_MAJOR, FILEWHEEL_VERSION_MINOR, FILEWHEEL_VERSION_PATCH, 0
+FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+FILEFLAGS 0
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_DLL
+FILESUBTYPE VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "FileWheel contributors"
+            VALUE "FileDescription", "FileWheel File Explorer context menu"
+            VALUE "FileVersion", FILEWHEEL_VERSION_TEXT
+            VALUE "InternalName", "FileWheelExplorerMenu"
+            VALUE "LegalCopyright", "Copyright (c) FileWheel contributors. MIT License."
+            VALUE "OriginalFilename", "FileWheelExplorerMenu.dll"
+            VALUE "ProductName", "FileWheel"
+            VALUE "ProductVersion", FILEWHEEL_VERSION_TEXT
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END

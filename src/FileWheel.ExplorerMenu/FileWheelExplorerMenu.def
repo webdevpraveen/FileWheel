@@ -1,0 +1,5 @@
+﻿; Exports of the Explorer context-menu COM server (see FileWheelExplorerMenu.c).
+LIBRARY FileWheelExplorerMenu
+EXPORTS
+    DllGetClassObject PRIVATE
+    DllCanUnloadNow PRIVATE
