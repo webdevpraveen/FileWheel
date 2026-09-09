@@ -1,0 +1,24 @@
+﻿<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/FileWheel.Core/FileWheel.Core.csproj" />
+    <Project Path="src/FileWheel.Engines/FileWheel.Engines.csproj" />
+    <Project Path="src/FileWheel.Platform.Windows/FileWheel.Platform.Windows.csproj" />
+    <Project Path="src/FileWheel.Platform.Linux/FileWheel.Platform.Linux.csproj" />
+    <Project Path="src/FileWheel.Platform.MacOS/FileWheel.Platform.MacOS.csproj" />
+    <Project Path="src/FileWheel.App/FileWheel.App.csproj" />
+    <Project Path="src/FileWheel.Cli/FileWheel.Cli.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/FileWheel.Core.Tests/FileWheel.Core.Tests.csproj" />
+    <Project Path="tests/FileWheel.Engines.Tests/FileWheel.Engines.Tests.csproj" />
+    <Project Path="tests/FileWheel.App.Tests/FileWheel.App.Tests.csproj" />
+    <Project Path="tests/FileWheel.Cli.Tests/FileWheel.Cli.Tests.csproj" />
+    <Project Path="tests/FileWheel.Platform.Tests/FileWheel.Platform.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="global.json" />
+    <File Path=".editorconfig" />
+  </Folder>
+</Solution>
